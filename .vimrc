@@ -18,6 +18,8 @@ set nocompatible
 set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set history=50
+set expandtab
+set sw=4
 
 set laststatus=2
 set statusline=[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
