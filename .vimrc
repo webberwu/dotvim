@@ -20,6 +20,7 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 set history=50
 set expandtab
 set sw=4
+set ts=4
 
 set laststatus=2
 set statusline=[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
