@@ -42,3 +42,4 @@ autocmd BufWinLeave * call clearmatches()
 source ~/.vim/bundle/matchit/matchit.vim
 
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
+let g:EasyMotion_leader_key = '<Leader>'
