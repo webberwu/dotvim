@@ -1,6 +1,5 @@
 #!/bin/bash
 
-DIFF=`which diff`
 ABSPATH=$(cd ${0%/*} && echo `pwd`/${0##*/})
 CWD=`dirname "$ABSPATH"`
 
