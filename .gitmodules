@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/Align"]
+	path = .vim/bundle/Align
+	url = git://github.com/vim-scripts/Align.git
