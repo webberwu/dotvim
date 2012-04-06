@@ -45,4 +45,4 @@ source ~/.vim/bundle/matchit/matchit.vim
 let g:EasyMotion_leader_key = '<Leader>'
 
 "fix conflict about sparkup <c-n>
-let g:sparkupNextMapping = '<c-r>'
+let g:sparkupNextMapping = '<c-i>'
