@@ -31,9 +31,7 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.phtml set filetype=php
 autocmd BufNewFile,BufRead *.html set filetype=php
 
-
 highlight ExtraWhitespace ctermbg=red guibg=red
-
 
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
