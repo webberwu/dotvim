@@ -37,4 +37,4 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 let g:EasyMotion_leader_key = '<Leader>'
 
 "fix conflict about sparkup <c-n>
-let g:sparkupNextMapping = '<c-i>'
+let g:sparkupNextMapping = '<c-a>'
