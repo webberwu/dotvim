@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/checksyntax"]
 	path = .vim/bundle/checksyntax
 	url = git://github.com/tomtom/checksyntax_vim.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = git://github.com/plasticboy/vim-markdown.git
