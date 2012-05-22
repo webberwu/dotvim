@@ -30,6 +30,7 @@ filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.phtml set filetype=php
 autocmd BufNewFile,BufRead *.html set filetype=php
+autocmd BufNewFile,BufRead *.htm set filetype=php
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
