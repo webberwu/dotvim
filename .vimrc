@@ -26,7 +26,7 @@ colorscheme desert
 
 set laststatus=2
 set statusline=%m[%f\%r%h%w][%{&ff}\-%{&fileencoding}\-%Y]\ %=[Position=%l,%v,%p%%]
-highlight statusline cterm=NONE ctermbg=darkmagenta ctermfg=magenta
+highlight statusline cterm=NONE ctermbg=darkcyan ctermfg=black
 highlight search cterm=NONE ctermbg=darkcyan ctermfg=white
 
 filetype plugin indent on
