@@ -22,9 +22,12 @@ set expandtab
 set sw=4
 "set tabstop=4
 
-set laststatus=2
-set statusline=[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
 colorscheme desert
+
+set laststatus=2
+set statusline=%m[%f\%r%h%w][%{&ff}\-%{&fileencoding}\-%Y]\ %=[Position=%l,%v,%p%%]
+highlight statusline cterm=NONE ctermbg=darkmagenta ctermfg=magenta
+highlight search cterm=NONE ctermbg=darkcyan ctermfg=white
 
 filetype plugin indent on
 
