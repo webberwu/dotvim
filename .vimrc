@@ -40,8 +40,8 @@ highlight User1 cterm=none ctermbg=234 ctermfg=grey
 highlight User2 cterm=none ctermbg=236 ctermfg=white
 highlight User3 cterm=none ctermbg=236 ctermfg=darkred
 highlight Search cterm=none ctermbg=darkcyan ctermfg=black
-highlight TabLine cterm=underline ctermbg=238 ctermfg=grey
-highlight TabLineFill cterm=underline ctermbg=236 ctermfg=grey
+highlight TabLine cterm=none ctermbg=238 ctermfg=grey
+highlight TabLineFill cterm=none ctermbg=236 ctermfg=grey
 highlight TabLineSel cterm=none ctermbg=darkmagenta ctermfg=lightmagenta
 
 filetype plugin indent on
