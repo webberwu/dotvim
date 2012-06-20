@@ -25,9 +25,21 @@ set sw=4
 colorscheme desert
 
 set laststatus=2
-set statusline=%m[%f\%r%h%w][%{&ff}\-%{&fileencoding}\-%Y]\ %=[Position=%l,%v,%p%%]
-highlight statusline cterm=NONE ctermbg=darkcyan ctermfg=black
-highlight search cterm=NONE ctermbg=darkcyan ctermfg=white
+set statusline=%0*\ w\ %*
+set statusline+=%2*\ %*
+set statusline+=%3*%m%r%*
+set statusline+=%2*%f\ %*
+set statusline+=%1*\ %{&ff},%{&fileencoding}%Y%H%W
+set statusline+=%=%*
+set statusline+=%1*\ dec:\%3.b,\ hex:\%2.B\ %*
+set statusline+=%2*\ row:%4.l/%4.L,\ col:%3.c\ %*
+set statusline+=%0*\ %3.p%%\ %*
+highlight statusline cterm=bold ctermbg=darkmagenta ctermfg=lightmagenta
+highlight statuslineNC cterm=none ctermbg=234 ctermfg=grey
+highlight User1 cterm=none ctermbg=234 ctermfg=grey
+highlight User2 cterm=none ctermbg=236 ctermfg=white
+highlight User3 cterm=none ctermbg=236 ctermfg=darkred
+highlight search cterm=none ctermbg=darkcyan ctermfg=black
 
 filetype plugin indent on
 
