@@ -57,6 +57,10 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+inoremap jj <ESC>
+inoremap mm $
+inoremap ,, ->
+
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
 
