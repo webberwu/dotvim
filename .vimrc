@@ -17,7 +17,7 @@ set background=dark
 set nocompatible
 set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-set history=50
+set history=100
 set expandtab
 set sw=4
 "set tabstop=4
