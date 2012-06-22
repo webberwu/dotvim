@@ -40,12 +40,14 @@ highlight User2 cterm=none ctermbg=236 ctermfg=white
 highlight User3 cterm=none ctermbg=236 ctermfg=darkred
 highlight StatusLine cterm=bold ctermbg=darkmagenta ctermfg=lightmagenta
 highlight StatusLineNC cterm=none ctermbg=234 ctermfg=grey
-highlight LineNr cterm=none ctermbg=black ctermfg=239
-highlight IncSearch cterm=none ctermbg=yellow ctermfg=black
-highlight Search cterm=none ctermbg=yellow ctermfg=black
+highlight LineNr cterm=none ctermbg=black ctermfg=238
+highlight IncSearch cterm=none ctermbg=6 ctermfg=black
+highlight Search cterm=none ctermbg=6 ctermfg=black
 highlight TabLine cterm=none ctermbg=238 ctermfg=grey
 highlight TabLineFill cterm=none ctermbg=236 ctermfg=grey
 highlight TabLineSel cterm=none ctermbg=darkmagenta ctermfg=lightmagenta
+highlight Visual cterm=none ctermbg=236
+highlight CursorLine cterm=none ctermbg=233
 
 filetype plugin indent on
 
@@ -53,7 +55,7 @@ autocmd BufNewFile,BufRead *.phtml set filetype=php
 autocmd BufNewFile,BufRead *.html set filetype=php
 autocmd BufNewFile,BufRead *.htm set filetype=php
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
