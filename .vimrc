@@ -13,6 +13,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 " set mouse=a
 set modeline
+set cursorline
 set background=dark
 set nocompatible
 set backspace=indent,eol,start
