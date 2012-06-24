@@ -65,6 +65,7 @@ autocmd BufWinLeave * call clearmatches()
 inoremap jj <ESC>
 inoremap mm $
 inoremap ,, ->
+noremap ,rs :%s/\s\+$//<CR>
 
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
