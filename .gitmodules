@@ -13,9 +13,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule ".vim/bundle/sparkup"]
-	path = .vim/bundle/sparkup
-	url = git@github.com:webberwu/sparkup.git
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
