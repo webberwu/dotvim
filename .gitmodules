@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/colorselector.vim"]
 	path = .vim/bundle/colorselector.vim
 	url = git://github.com/c9s/colorselector.vim.git
+[submodule ".vim/bundle/vim-autoclose"]
+	path = .vim/bundle/vim-autoclose
+	url = git://github.com/Townk/vim-autoclose.git
