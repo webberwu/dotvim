@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-autoclose"]
 	path = .vim/bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose.git
+[submodule ".vim/bundle/OOP-javascript-indentation"]
+	path = .vim/bundle/OOP-javascript-indentation
+	url = git://github.com/vim-scripts/OOP-javascript-indentation.git
