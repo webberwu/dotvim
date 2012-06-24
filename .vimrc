@@ -68,9 +68,9 @@ inoremap ,, ->
 noremap ,rs :%s/\s\+$//<CR>
 
 "php-doc
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
+inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-K> :call PhpDocSingle()<CR>
+vnoremap <C-K> :call PhpDocRange()<CR>
 
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
