@@ -74,6 +74,3 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
-
-"fix conflict about sparkup <c-n>
-let g:sparkupNextMapping = '<c-a>'
