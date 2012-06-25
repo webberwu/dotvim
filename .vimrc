@@ -41,7 +41,7 @@ highlight User3 cterm=none ctermbg=237 ctermfg=darkred
 highlight StatusLine cterm=bold ctermbg=darkmagenta ctermfg=lightmagenta
 highlight StatusLineNC cterm=none ctermbg=235 ctermfg=grey
 highlight LineNr cterm=none ctermbg=black ctermfg=238
-highlight IncSearch cterm=none ctermbg=6 ctermfg=black
+highlight IncSearch cterm=none ctermbg=14 ctermfg=black
 highlight Search cterm=none ctermbg=6 ctermfg=black
 highlight TabLine cterm=none ctermbg=238 ctermfg=grey
 highlight TabLineFill cterm=none ctermbg=236 ctermfg=grey
