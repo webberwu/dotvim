@@ -62,10 +62,11 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-inoremap jj <ESC>
-inoremap mm $
-inoremap ,, ->
-noremap ,rs :%s/\s\+$//<CR>
+inoremap <SPACE>j <ESC>
+inoremap <SPACE>m $
+inoremap <SPACE>. =>
+inoremap <SPACE>, ->
+noremap <SPACE>rs :%s/\s\+$//<CR>
 
 "php-doc
 inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
