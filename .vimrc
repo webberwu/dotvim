@@ -23,7 +23,8 @@ set expandtab
 set sw=4
 "set tabstop=4
 
-colorscheme desert
+"colorscheme desert
+colorscheme webberwu
 
 set laststatus=2
 set statusline=%0*\ w\ %*
@@ -38,16 +39,6 @@ set statusline+=%0*\ %3.p%%\ %*
 highlight User1 cterm=none ctermbg=235 ctermfg=grey
 highlight User2 cterm=none ctermbg=237 ctermfg=white
 highlight User3 cterm=none ctermbg=237 ctermfg=darkred
-highlight StatusLine cterm=bold ctermbg=darkmagenta ctermfg=lightmagenta
-highlight StatusLineNC cterm=none ctermbg=235 ctermfg=grey
-highlight LineNr cterm=none ctermbg=black ctermfg=238
-highlight IncSearch cterm=none ctermbg=14 ctermfg=black
-highlight Search cterm=none ctermbg=6 ctermfg=black
-highlight TabLine cterm=none ctermbg=238 ctermfg=grey
-highlight TabLineFill cterm=none ctermbg=236 ctermfg=grey
-highlight TabLineSel cterm=none ctermbg=darkmagenta ctermfg=lightmagenta
-highlight Visual cterm=none ctermbg=238
-highlight CursorLine cterm=none ctermbg=234
 
 filetype plugin indent on
 
