@@ -80,7 +80,7 @@ if &t_Co > 255
     hi StorageClass    ctermfg=208
     hi Structure       ctermfg=81
     hi Tag             ctermfg=162
-    hi Title           ctermfg=166
+    hi Title           ctermfg=162
     hi Todo            ctermfg=231    ctermbg=232    cterm=bold
 
     hi Typedef         ctermfg=81
