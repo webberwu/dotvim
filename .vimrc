@@ -67,7 +67,7 @@ vnoremap <C-K> :call PhpDocRange()<CR>
 "let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:EasyMotion_leader_key = '<Leader>'
 
-
+"ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
