@@ -53,6 +53,8 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+autocmd Syntax php normal zR
+
 inoremap jj <ESC>
 inoremap jm $
 inoremap jk ->
