@@ -54,6 +54,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 set foldmethod=indent
+set foldlevelstart=99
 autocmd BufWinLeave * mkview
 autocmd BufWinEnter * silent loadview
 "autocmd Syntax php normal zR
