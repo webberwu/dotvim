@@ -40,7 +40,7 @@ if &t_Co > 255
     hi Float           ctermfg=135
     hi FoldColumn      ctermfg=67     ctermbg=16
     hi Folded          ctermfg=67     ctermbg=16
-    hi Function        ctermfg=118
+    hi Function        ctermfg=208
     hi Identifier      ctermfg=208
     hi Ignore          ctermfg=244    ctermbg=232
     hi IncSearch       ctermbg=81     ctermfg=16     cterm=none
