@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/vim-indent-guides.git"]
 	path = .vim/bundle/vim-indent-guides.git
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule ".vim/bundle/vim-autocomplpop"]
+	path = .vim/bundle/vim-autocomplpop
+	url = git://github.com/othree/vim-autocomplpop.git
