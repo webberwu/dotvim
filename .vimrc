@@ -86,3 +86,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 hi IndentGuidesOdd  ctermbg=233
 hi IndentGuidesEven ctermbg=234
+
+"vim-autocomplpop
+let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
+let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
