@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vim-autocomplpop"]
 	path = .vim/bundle/vim-autocomplpop
 	url = git://github.com/othree/vim-autocomplpop.git
+[submodule ".vim/bundle/scss-syntax.vim"]
+	path = .vim/bundle/scss-syntax.vim
+	url = git://github.com/cakebaker/scss-syntax.vim.git
