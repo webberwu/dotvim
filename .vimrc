@@ -27,7 +27,7 @@ set sw=4
 colorscheme webberwu
 
 set laststatus=2
-set statusline=%0*\ w\ %*
+set statusline=%0*\ %{fugitive#statusline()}\ %*
 set statusline+=%2*\ %*
 set statusline+=%3*%m%r%*
 set statusline+=%2*%f\ %*
