@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
-[submodule ".vim/bundle/checksyntax"]
-	path = .vim/bundle/checksyntax
-	url = git://github.com/tomtom/checksyntax_vim.git
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
