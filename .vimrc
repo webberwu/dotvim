@@ -96,3 +96,4 @@ autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 "syntastic
 let g:syntastic_auto_loc_list=1
 let g:syntastic_php_checkers=['php', 'phpmd']
+let g:syntastic_css_checkers=[]
