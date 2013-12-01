@@ -21,7 +21,7 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 set history=100
 set expandtab
 set sw=4
-set tabstop=4
+"set tabstop=4
 
 "colorscheme desert
 colorscheme webberwu
