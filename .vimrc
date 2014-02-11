@@ -66,6 +66,8 @@ inoremap jj <ESC>
 inoremap jm $
 inoremap jk ->
 inoremap jl =>
+noremap je $
+noremap js ^
 noremap .rs :%s/\s\+$//<CR>
 
 "php-doc
