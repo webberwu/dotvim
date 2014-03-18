@@ -103,6 +103,7 @@ autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_php_checkers=['php', 'phpmd']
 let g:syntastic_css_checkers=[]
+let g:syntastic_javascript_checkers=['jshint']
 
 "Shougo/neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
