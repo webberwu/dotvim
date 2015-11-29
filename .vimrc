@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'ap/vim-css-color'
 Plugin 'c9s/colorselector.vim'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'dietsche/vim-lastplace'
 Plugin 'guns/xterm-color-table.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
@@ -92,9 +93,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" back to last edit position
-autocmd BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 set foldmethod=indent
 set foldlevelstart=99
