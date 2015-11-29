@@ -1,4 +1,43 @@
-call pathogen#runtime_append_all_bundles()
+" vundle
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+    echo 'Installing Vundle ...'
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
+endif
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'ap/vim-css-color'
+Plugin 'c9s/colorselector.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'guns/xterm-color-table.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'klen/python-mode'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mattn/emmet-vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'othree/html5.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
+Plugin 'vim-scripts/Align'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/OOP-javascript-indentation'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'webberwu/html.vim'
+Plugin 'webberwu/php-doc.vim'
+Plugin 'webberwu/php.vim'
+Plugin 'webberwu/snipmate.vim'
+Plugin 'webberwu/vim-fugitive'
+call vundle#end()
+
 set encoding=utf-8
 set fileencodings=utf-8,big5
 
@@ -20,8 +59,8 @@ set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set history=100
 set expandtab
+set tabstop=4
 set sw=4
-"set tabstop=4
 
 "colorscheme desert
 colorscheme webberwu
