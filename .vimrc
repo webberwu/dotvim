@@ -65,6 +65,7 @@ set history=100
 set expandtab
 set tabstop=4
 set sw=4
+set showtabline=2                     " always show tab
 
 "colorscheme desert
 colorscheme webberwu
