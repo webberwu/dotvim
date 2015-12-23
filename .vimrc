@@ -67,6 +67,7 @@ set tabstop=4
 set sw=4
 set showtabline=2                     " always show tab
 set wildmode=longest,list             " use emacs-style tab completion when selecting files, etc
+set wildmenu                          " make tab completion for files/buffers act like bash
 
 "colorscheme desert
 colorscheme webberwu
