@@ -88,9 +88,7 @@ highlight User3 cterm=none ctermbg=237 ctermfg=darkred
 
 filetype plugin indent on
 
-autocmd BufNewFile,BufRead *.phtml set filetype=php
-autocmd BufNewFile,BufRead *.html set filetype=php
-autocmd BufNewFile,BufRead *.htm set filetype=php
+autocmd BufNewFile,BufRead *.phtml set filetype=html
 
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
