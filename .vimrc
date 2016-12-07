@@ -13,6 +13,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'guns/xterm-color-table.vim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
 Plugin 'L9'
@@ -160,3 +161,10 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 
 "pymode
 let g:pymode_options_colorcolumn = 0
+
+"vim-easy-align
+"usage: vmode: ga*|
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
+" https://robots.thoughtbot.com/align-github-flavored-markdown-tables-in-vim
+vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
