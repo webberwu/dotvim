@@ -8,8 +8,10 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'ap/vim-css-color'
+Plugin 'avakhov/vim-yaml'
 Plugin 'c9s/colorselector.vim'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'guns/xterm-color-table.vim'
 Plugin 'jelera/vim-javascript-syntax'
