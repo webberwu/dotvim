@@ -34,6 +34,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Align'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/OOP-javascript-indentation'
@@ -168,3 +170,10 @@ nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 " https://robots.thoughtbot.com/align-github-flavored-markdown-tables-in-vim
 vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
+"airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+"airline-theme
+"screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+let g:airline_theme='powerlineish'
