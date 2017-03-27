@@ -2,3 +2,4 @@
 .*.swp
 .vim/view/
 .vim/bundle
+.DS_Store
