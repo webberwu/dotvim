@@ -19,6 +19,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'L9'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
@@ -181,3 +182,6 @@ let g:airline#extensions#tabline#show_buffers = 0
 "airline-theme
 "screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='powerlineish'
+
+"vim-gutentags
+let g:gutentags_cache_dir = '~/.cache/vim-gutentags'
