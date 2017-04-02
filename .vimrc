@@ -185,3 +185,4 @@ let g:airline_theme='powerlineish'
 
 "vim-gutentags
 let g:gutentags_cache_dir = '~/.cache/vim-gutentags'
+nmap <C-]> :tab tag <C-R><C-W><CR>
