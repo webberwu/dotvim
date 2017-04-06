@@ -8,6 +8,7 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'ap/vim-css-color'
+Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'avakhov/vim-yaml'
 Plugin 'c9s/colorselector.vim'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -189,3 +190,20 @@ let g:airline_theme='powerlineish'
 "vim-gutentags
 let g:gutentags_cache_dir = '~/.cache/vim-gutentags'
 nmap <C-]> :tab tag <C-R><C-W><CR>
+
+"vim-php-namespace: use statements
+let g:php_namespace_sort_after_insert = 1
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>nu <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>nu :call PhpInsertUse()<CR>
+
+"vim-php-namespace: fully qualified
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
