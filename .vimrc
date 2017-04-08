@@ -24,6 +24,7 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'L9'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
+Plugin 'mikehaertl/pdv-standalone'
 Plugin 'mkitt/tabline.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'othree/html5.vim'
@@ -46,7 +47,6 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/OOP-javascript-indentation'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'webberwu/html.vim'
-Plugin 'webberwu/php-doc.vim'
 Plugin 'webberwu/snipmate.vim'
 Plugin 'webberwu/vim-fugitive'
 call vundle#end()
@@ -123,8 +123,10 @@ noremap me $
 noremap ms ^
 noremap .rs :%s/\s\+$//<CR>
 
-"php-doc
-inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
+"pdv-standalone
+let g:pdv_cfg_Author = 'Webber Wu <chenshin0719@gmail.com>'
+let g:pdv_cfg_ReturnVal = ''
+let g:pdv_cfg_Uses = 1
 nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
 
