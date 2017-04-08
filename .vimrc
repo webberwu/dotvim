@@ -126,7 +126,6 @@ noremap .rs :%s/\s\+$//<CR>
 
 "pdv-standalone
 let g:pdv_cfg_Author = 'Webber Wu <chenshin0719@gmail.com>'
-let g:pdv_cfg_ReturnVal = ''
 let g:pdv_cfg_Uses = 1
 nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
