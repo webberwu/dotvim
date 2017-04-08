@@ -3,7 +3,7 @@ let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
 if !filereadable(vundle_readme)
     echo 'Installing Vundle ...'
     silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
+    silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -46,6 +46,7 @@ Plugin 'vim-scripts/Align'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/OOP-javascript-indentation'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'webberwu/html.vim'
 Plugin 'webberwu/snipmate.vim'
 Plugin 'webberwu/vim-fugitive'
