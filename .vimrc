@@ -34,12 +34,12 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Align'
@@ -162,10 +162,6 @@ let g:syntastic_css_checkers=[]
 let g:syntastic_html_checkers=[]
 let g:syntastic_javascript_checkers=['jshint']
 
-"Shougo/neocomplcache.vim
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-
 "taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 let g:Tlist_Show_One_File = 1
@@ -209,3 +205,12 @@ function! IPhpExpandClass()
 endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+"YouCompleteMe
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"https://github.com/Valloric/YouCompleteMe/issues/2015
+set completeopt-=preview
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"inoremap <C-c> <ESC>
