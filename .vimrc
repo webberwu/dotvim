@@ -181,6 +181,8 @@ vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#close_symbol = '×'
+let g:airline#extensions#tabline#fnamemod = ':t'
 "airline-theme
 "screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='powerlineish'
