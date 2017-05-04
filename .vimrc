@@ -7,6 +7,7 @@ if !filereadable(vundle_readme)
 endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'airblade/vim-gitgutter'
 Plugin 'ap/vim-css-color'
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'avakhov/vim-yaml'
