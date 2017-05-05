@@ -15,6 +15,7 @@ let g:colors_name="webberwu"
 
 
 " support for 256-color terminal
+" http://vimdoc.sourceforge.net/htmldoc/syntax.html#highlight-groups
 
 if &t_Co > 255
     hi Boolean         ctermfg=135
@@ -75,7 +76,7 @@ if &t_Co > 255
     hi SpecialKey      ctermfg=245
 
     hi Statement       ctermfg=162                   cterm=bold
-    hi StatusLine      ctermbg=162    ctermfg=219    cterm=bold
+    hi StatusLine      ctermbg=235    ctermfg=243    cterm=bold
     hi StatusLineNC    ctermbg=235    ctermfg=243    cterm=none
     hi StorageClass    ctermfg=208
     hi Structure       ctermfg=81
@@ -91,7 +92,7 @@ if &t_Co > 255
     hi VisualNOS                      ctermbg=238
     hi Visual                         ctermbg=238
     hi WarningMsg      ctermfg=231    ctermbg=238    cterm=bold
-    hi WildMenu        ctermfg=81     ctermbg=16
+    hi WildMenu        ctermfg=235    ctermbg=112
 
     hi Normal          ctermfg=252
     hi Comment         ctermfg=243
