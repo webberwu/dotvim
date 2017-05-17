@@ -47,10 +47,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Align'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/OOP-javascript-indentation'
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'webberwu/html.vim'
 Plugin 'webberwu/snipmate.vim'
+Plugin 'webberwu/taglist.vim'
 Plugin 'webberwu/vim-fugitive'
 call vundle#end()
 
