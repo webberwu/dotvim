@@ -162,6 +162,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_php_checkers=['php', 'phpmd']
 let g:syntastic_css_checkers=[]
 let g:syntastic_html_checkers=[]
+let g:syntastic_scala_checkers=[]
 let g:syntastic_javascript_checkers=['jshint']
 
 "taglist
