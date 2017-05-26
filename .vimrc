@@ -25,6 +25,7 @@ Plugin 'klen/python-mode'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'L9'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'majutsushi/tagbar'
 Plugin 'mattn/emmet-vim'
 Plugin 'mikehaertl/pdv-standalone'
 Plugin 'mkitt/tabline.vim'
@@ -50,7 +51,6 @@ Plugin 'vim-scripts/OOP-javascript-indentation'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'webberwu/html.vim'
 Plugin 'webberwu/snipmate.vim'
-Plugin 'webberwu/taglist.vim'
 Plugin 'webberwu/vim-fugitive'
 call vundle#end()
 
@@ -165,11 +165,9 @@ let g:syntastic_html_checkers=[]
 let g:syntastic_scala_checkers=[]
 let g:syntastic_javascript_checkers=['jshint']
 
-"taglist
-nnoremap <silent> <F8> :TlistToggle<CR>
-let g:Tlist_Show_One_File = 1
-let g:Tlist_Exit_OnlyWindow = 1
-let g:Tlist_GainFocus_On_ToggleOpen = 1
+"tagbar
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
 
 "pymode
 let g:pymode_options_colorcolumn = 0
