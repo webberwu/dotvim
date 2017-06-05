@@ -218,3 +218,7 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 set completeopt-=preview
 "autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "inoremap <C-c> <ESC>
+
+"vim-multiple-cursors
+let g:multi_cursor_quit_key='<C-c>'
+nnoremap <C-c> :call multiple_cursors#quit()<CR>
