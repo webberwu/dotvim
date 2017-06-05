@@ -187,6 +187,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 "airline-theme
 "screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='powerlineish'
+let g:airline_section_warning = airline#section#create_right(['%{gutentags#statusline()}', 'ycm_warning_count', 'whitespace'])
 
 "vim-gutentags
 let g:gutentags_cache_dir = '~/.cache/vim-gutentags'
