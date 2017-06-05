@@ -191,6 +191,10 @@ let g:airline_theme='powerlineish'
 "vim-gutentags
 let g:gutentags_cache_dir = '~/.cache/vim-gutentags'
 let g:gutentags_project_root = ['.project', '.vimtag']
+" :ts list match file
+" :ptselect same with :ts
+" :tp previous match file
+" :tn next match file
 nmap <C-]> :tab tag <C-R><C-W><CR>
 
 "vim-php-namespace: use statements
