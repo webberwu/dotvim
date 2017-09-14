@@ -220,9 +220,9 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 "https://github.com/Valloric/YouCompleteMe/issues/2015
-set completeopt-=preview
-"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-"inoremap <C-c> <ESC>
+"set completeopt-=preview
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+inoremap <C-c> <ESC>
 
 "vim-multiple-cursors
 let g:multi_cursor_quit_key='<C-c>'
