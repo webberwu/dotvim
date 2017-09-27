@@ -44,8 +44,8 @@ if &t_Co > 255
     hi Function        ctermfg=208
     hi Identifier      ctermfg=208
     hi Ignore          ctermfg=244    ctermbg=232
-    hi IncSearch       ctermbg=81     ctermfg=16     cterm=none
-    hi Search          ctermbg=162    ctermfg=16     cterm=none
+    hi IncSearch       ctermfg=16     ctermbg=81     cterm=none
+    hi Search          ctermfg=16     ctermbg=162    cterm=none
 
     hi Keyword         ctermfg=162                   cterm=bold
     hi Label           ctermfg=229                   cterm=none
@@ -76,8 +76,8 @@ if &t_Co > 255
     hi SpecialKey      ctermfg=245
 
     hi Statement       ctermfg=162                   cterm=bold
-    hi StatusLine      ctermbg=235    ctermfg=243    cterm=bold
-    hi StatusLineNC    ctermbg=235    ctermfg=243    cterm=none
+    hi StatusLine      ctermfg=243    ctermbg=235    cterm=bold
+    hi StatusLineNC    ctermfg=243    ctermbg=235    cterm=none
     hi StorageClass    ctermfg=208
     hi Structure       ctermfg=81
     hi Tag             ctermfg=162
@@ -94,15 +94,15 @@ if &t_Co > 255
     hi WarningMsg      ctermfg=231    ctermbg=238    cterm=bold
     hi WildMenu        ctermfg=112    ctermbg=235
 
-    hi Normal          ctermfg=252
+    hi Normal          ctermfg=252    ctermbg=232
     hi Comment         ctermfg=243
     hi CursorLine                     ctermbg=234    cterm=none
     hi CursorLineNR    ctermfg=162    ctermbg=234
     hi CursorColumn                   ctermbg=234
-    hi LineNr          ctermbg=232    ctermfg=238    cterm=none
-    hi NonText         ctermfg=250    ctermbg=233
+    hi LineNr          ctermfg=238    ctermbg=232    cterm=none
+    hi NonText         ctermfg=238    ctermbg=232
 
-    hi TabLine         ctermbg=235    ctermfg=243    cterm=none
-    hi TabLineFill     ctermbg=233    ctermfg=243    cterm=none
-    hi TabLineSel      ctermbg=162    ctermfg=225    cterm=none
+    hi TabLine         ctermfg=243    ctermbg=235    cterm=none
+    hi TabLineFill     ctermfg=243    ctermbg=233    cterm=none
+    hi TabLineSel      ctermfg=225    ctermbg=162    cterm=none
 end
