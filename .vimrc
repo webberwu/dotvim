@@ -232,3 +232,7 @@ inoremap <C-c> <ESC>
 "vim-multiple-cursors
 let g:multi_cursor_quit_key='<C-c>'
 nnoremap <C-c> :call multiple_cursors#quit()<CR>
+
+"posva/vim-vue
+autocmd FileType vue syntax sync fromstart
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.javascript.html.css
