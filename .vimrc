@@ -21,6 +21,8 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'guns/xterm-color-table.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'jwalton512/vim-blade'
 Plugin 'kien/ctrlp.vim'
@@ -236,3 +238,20 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 "posva/vim-vue
 autocmd FileType vue syntax sync fromstart
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.javascript.html.css
+
+"junegunn/fzf.vim
+nnoremap <C-j> :Files<CR>
+let g:fzf_tags_command = 'ctags --extra=+f -R'
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Identifier'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Identifier'],
+  \ 'info':    ['fg', 'Delimiter'],
+  \ 'prompt':  ['fg', 'Comment'],
+  \ 'pointer': ['fg', 'Identifier'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
