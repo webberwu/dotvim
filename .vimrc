@@ -19,6 +19,7 @@ Plugin 'dietsche/vim-lastplace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'guns/xterm-color-table.vim'
+Plugin 'heavenshell/vim-jsdoc'
 Plugin 'isRuslan/vim-es6'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
