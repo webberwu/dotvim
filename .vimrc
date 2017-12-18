@@ -116,9 +116,8 @@ autocmd BufWinLeave * call clearmatches()
 
 set foldmethod=indent
 set foldlevelstart=99
-" http://programfeelings.blogspot.tw/2013/07/vim.html
-autocmd BufWinLeave *.* silent mkview
-autocmd BufWinEnter *.* silent loadview
+autocmd BufWinLeave *.* silent! mkview
+autocmd BufWinEnter *.* silent! loadview
 "autocmd Syntax php normal zR
 
 inoremap jj <ESC>
