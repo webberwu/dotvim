@@ -1,64 +1,70 @@
-" vundle
-let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
-if !filereadable(vundle_readme)
-    echo 'Installing Vundle ...'
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ap/vim-css-color'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'avakhov/vim-yaml'
-Plugin 'c9s/colorselector.vim'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'dietsche/vim-lastplace'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'guns/xterm-color-table.vim'
-Plugin 'heavenshell/vim-jsdoc'
-Plugin 'isRuslan/vim-es6'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'jwalton512/vim-blade'
-Plugin 'kien/ctrlp.vim'
-Plugin 'klen/python-mode'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'lvht/phpcd.vim'
-Plugin 'L9'
-Plugin 'majutsushi/tagbar'
-Plugin 'mattn/emmet-vim'
-Plugin 'mikehaertl/pdv-standalone'
-Plugin 'mkitt/tabline.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'posva/vim-vue'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'StanAngeloff/php.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-dotenv'
-Plugin 'tpope/vim-ragtag'
-Plugin 'tpope/vim-surround'
-Plugin 'Townk/vim-autoclose'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-scripts/Align'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'vim-scripts/OOP-javascript-indentation'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'webberwu/html.vim'
-Plugin 'webberwu/snipmate.vim'
-Plugin 'webberwu/vim-fugitive'
-call vundle#end()
+
+" Valloric/YouCompleteMe
+" https://github.com/Valloric/YouCompleteMe/issues/1751#issuecomment-273380629
+function! BuildYCM(info)
+  if a:info.status == 'installed' || a:info.force
+    !./install.py --all
+  endif
+endfunction
+
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-css-color'
+Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+Plug 'avakhov/vim-yaml'
+Plug 'c9s/colorselector.vim'
+Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
+Plug 'chase/vim-ansible-yaml'
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+Plug 'dietsche/vim-lastplace'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'guns/xterm-color-table.vim'
+Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
+Plug 'isRuslan/vim-es6', { 'for': ['js', 'vue'] }
+Plug 'jelera/vim-javascript-syntax', { 'for': ['js', 'vue'] }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'jwalton512/vim-blade', { 'for': 'php' }
+Plug 'kien/ctrlp.vim'
+Plug 'klen/python-mode', { 'for': 'py' }
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'majutsushi/tagbar'
+Plug 'mattn/emmet-vim'
+Plug 'mikehaertl/pdv-standalone', { 'for': 'php' }
+Plug 'mkitt/tabline.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
+Plug 'plasticboy/vim-markdown', { 'for': 'md' }
+Plug 'posva/vim-vue', { 'for': ['js', 'vue'] }
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'StanAngeloff/php.vim', { 'for': 'php' }
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-dotenv'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-surround'
+Plug 'Townk/vim-autoclose'
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/Align'
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
+Plug 'webberwu/html.vim'
+Plug 'webberwu/snipmate.vim'
+Plug 'webberwu/vim-fugitive'
+call plug#end()
 
 set encoding=utf-8
 set fileencodings=utf-8,big5
@@ -189,6 +195,7 @@ vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#fnamemod = ':t'
 "airline-theme
