@@ -242,10 +242,6 @@ inoremap <C-c> <ESC>
 let g:multi_cursor_quit_key='<C-c>'
 nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
-"posva/vim-vue
-autocmd FileType vue syntax sync fromstart
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.javascript.html.css
-
 "junegunn/fzf.vim
 nnoremap <C-j> :Files<CR>
 let g:fzf_tags_command = 'ctags --extra=+f -R'
