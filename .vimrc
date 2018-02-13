@@ -239,6 +239,13 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 set completeopt-=preview
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 inoremap <C-c> <ESC>
+"https://github.com/Quramy/tsuquyomi/issues/24
+let g:ycm_semantic_triggers = {
+    \   'html': ['<', '"', '</', ' '],
+    \   'javascript,typescript,python,scala,go': ['.'],
+    \   'php': ['->', '::', '"', "'", 'use ', 'namespace ', '\'],
+    \   'scss,sass,css': [ 're!^\s{4}', 're!:\s+' ],
+    \ }
 
 "vim-multiple-cursors
 let g:multi_cursor_quit_key='<C-c>'
