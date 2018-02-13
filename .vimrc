@@ -254,16 +254,16 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 "junegunn/fzf.vim
 nnoremap <C-j> :Files<CR>
 let g:fzf_tags_command = 'ctags --extra=+f -R'
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Identifier'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Identifier'],
-  \ 'info':    ['fg', 'Delimiter'],
-  \ 'prompt':  ['fg', 'Comment'],
-  \ 'pointer': ['fg', 'Identifier'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+let g:fzf_colors = {
+    \ 'fg':      ['fg', 'Normal'],
+    \ 'bg':      ['bg', 'Normal'],
+    \ 'hl':      ['fg', 'Identifier'],
+    \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+    \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+    \ 'hl+':     ['fg', 'Identifier'],
+    \ 'info':    ['fg', 'Delimiter'],
+    \ 'prompt':  ['fg', 'Comment'],
+    \ 'pointer': ['fg', 'Identifier'],
+    \ 'marker':  ['fg', 'Keyword'],
+    \ 'spinner': ['fg', 'Label'],
+    \ 'header':  ['fg', 'Comment'] }
