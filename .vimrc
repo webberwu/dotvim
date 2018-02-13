@@ -26,6 +26,7 @@ Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'guns/xterm-color-table.vim'
+Plug 'hail2u/vim-css3-syntax'
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
 Plug 'isRuslan/vim-es6', { 'for': ['js', 'vue'] }
 Plug 'jelera/vim-javascript-syntax', { 'for': ['js', 'vue'] }
