@@ -33,7 +33,7 @@ Plug 'jelera/vim-javascript-syntax', { 'for': ['js', 'vue'] }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'jwalton512/vim-blade', { 'for': 'php' }
+Plug 'jwalton512/vim-blade', { 'for': ['blade', 'php'] }
 Plug 'kien/ctrlp.vim'
 Plug 'klen/python-mode', { 'for': 'py' }
 Plug 'ludovicchabant/vim-gutentags'
