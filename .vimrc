@@ -115,6 +115,7 @@ highlight User3 cterm=none ctermbg=237 ctermfg=darkred
 filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.yml set filetype=yaml
+autocmd filetype crontab set nobackup nowritebackup
 
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
