@@ -44,6 +44,7 @@ Plug 'mikehaertl/pdv-standalone', { 'for': 'php' }
 Plug 'mkitt/tabline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 Plug 'posva/vim-vue', { 'for': ['js', 'vue'] }
 Plug 'scrooloose/nerdtree'
@@ -268,3 +269,10 @@ let g:fzf_colors = {
     \ 'marker':  ['fg', 'Keyword'],
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment'] }
+
+" phpactor/phpactor
+" Include use statement
+nmap <C-u> :call phpactor#UseAdd()<CR>
+" Goto definition of class or class member under the cursor
+nmap <C-o> :call phpactor#GotoDefinition()<CR>
+autocmd FileType php setlocal omnifunc=phpactor#Complete
