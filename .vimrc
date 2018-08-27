@@ -255,6 +255,7 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
 "junegunn/fzf.vim
 nnoremap <C-j> :Files<CR>
+let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_tags_command = 'ctags --extra=+f -R'
 let g:fzf_colors = {
     \ 'fg':      ['fg', 'Normal'],
