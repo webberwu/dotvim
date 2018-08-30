@@ -145,8 +145,8 @@ let g:pdv_cfg_Uses = 1
 nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
 
-"let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
-let g:EasyMotion_leader_key = '<Leader>'
+"nerdtree
+let NERDTreeShowHidden = 1
 
 "ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
