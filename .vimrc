@@ -21,6 +21,7 @@ Plug 'avakhov/vim-yaml'
 Plug 'c9s/colorselector.vim'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
 Plug 'chase/vim-ansible-yaml'
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
@@ -35,7 +36,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'jwalton512/vim-blade', { 'for': ['blade', 'php'] }
 Plug 'kien/ctrlp.vim'
-Plug 'klen/python-mode', { 'for': 'py' }
 Plug 'kristijanhusak/vim-carbon-now-sh'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
@@ -61,6 +61,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/Align'
+Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
@@ -122,6 +123,7 @@ filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.yml set filetype=yaml
 autocmd filetype crontab set nobackup nowritebackup
+autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
 
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
@@ -191,9 +193,6 @@ let g:syntastic_javascript_checkers=['jshint']
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
-
-"pymode
-let g:pymode_options_colorcolumn = 0
 
 "vim-easy-align
 "usage: vmode: ga*|
