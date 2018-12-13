@@ -36,6 +36,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'jwalton512/vim-blade', { 'for': ['blade', 'php'] }
 Plug 'kien/ctrlp.vim'
 Plug 'klen/python-mode', { 'for': 'py' }
+Plug 'kristijanhusak/vim-carbon-now-sh'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'majutsushi/tagbar'
