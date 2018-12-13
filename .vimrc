@@ -74,10 +74,10 @@ set fileencodings=utf-8,big5
 syntax on
 set t_Co=256
 set incsearch
-set hls
-set nu
-set ru
-set ic
+set hlsearch
+set number
+set ruler
+set ignorecase
 set encoding=utf-8
 set fileencoding=utf-8
 " set mouse=a
@@ -88,13 +88,17 @@ set nocompatible
 set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set history=100
-set expandtab
 set tabstop=4
-set sw=4
+set shiftwidth=4
+set expandtab
 set showtabline=2                     " always show tab
 set wildmode=longest,list             " use emacs-style tab completion when selecting files, etc
 set wildmenu                          " make tab completion for files/buffers act like bash
 set tags+=tags,tags.vendors
+set autoindent
+set smartindent
+set smarttab
+"set autochdir
 
 "colorscheme desert
 colorscheme webberwu
