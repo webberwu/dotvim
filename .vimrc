@@ -48,6 +48,7 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 Plug 'posva/vim-vue', { 'for': ['js', 'vue'] }
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
@@ -283,3 +284,8 @@ nmap <C-u> :call phpactor#UseAdd()<CR>
 " Goto definition of class or class member under the cursor
 nmap <C-o> :call phpactor#GotoDefinition()<CR>
 autocmd FileType php setlocal omnifunc=phpactor#Complete
+
+" ryanoasis/vim-devicons
+" refs. https://github.com/ryanoasis/nerd-fonts#font-installation
+" install font on macOS
+" cd ~/Library/Fonts && curl -fLo 'Droid Sans Mono for Powerline Nerd Font Complete.otf' https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
