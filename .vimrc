@@ -208,6 +208,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
 "airline-theme
 "screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='powerlineish'
