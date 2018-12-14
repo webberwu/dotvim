@@ -21,6 +21,7 @@ Plug 'avakhov/vim-yaml'
 Plug 'c9s/colorselector.vim'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
 Plug 'chase/vim-ansible-yaml'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
@@ -35,7 +36,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'jwalton512/vim-blade', { 'for': ['blade', 'php'] }
-Plug 'kien/ctrlp.vim'
 Plug 'kristijanhusak/vim-carbon-now-sh'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
