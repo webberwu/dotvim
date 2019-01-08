@@ -41,7 +41,6 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
-Plug 'mikehaertl/pdv-standalone', { 'for': 'php' }
 Plug 'mkitt/tabline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
@@ -52,8 +51,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
+Plug 'SirVer/ultisnips', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tobyS/vmustache', { 'for': 'php' }
 Plug 'tpope/vim-dotenv'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-surround'
@@ -69,6 +70,7 @@ Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
 Plug 'webberwu/html.vim'
 Plug 'webberwu/snipmate.vim'
 Plug 'webberwu/vim-fugitive'
+Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
 call plug#end()
 
 set encoding=utf-8
@@ -147,11 +149,12 @@ noremap me $
 noremap ms ^
 noremap .rs :%s/\s\+$//<CR>
 
-"pdv-standalone
-let g:pdv_cfg_Author = 'Webber Wu <chenshin0719@gmail.com>'
+"forked from tobyS/pdv, YaroslavMolchan/pdv has implemented feature which return type.
+"dependence: SirVer/ultisnips, tobyS/vmustache
 let g:pdv_cfg_Uses = 1
-nnoremap <C-K> :call PhpDocSingle()<CR>
-vnoremap <C-K> :call PhpDocRange()<CR>
+let g:pdv_template_dir = $HOME . '/.vim/plugged/pdv/templates_snip'
+nnoremap <C-K> :call pdv#DocumentWithSnip()<CR> :%s/\s\+$//<CR>
+vnoremap <C-K> :call pdv#DocumentWithSnip()<CR> :%s/\s\+$//<CR>
 
 "nerdtree
 let NERDTreeShowHidden = 1
