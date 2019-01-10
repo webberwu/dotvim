@@ -46,11 +46,11 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
-Plug 'posva/vim-vue', { 'for': ['js', 'vue'] }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'terryma/vim-multiple-cursors'
