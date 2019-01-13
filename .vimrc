@@ -49,7 +49,6 @@ Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
@@ -67,6 +66,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
+Plug 'w0rp/ale'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/snipmate.vim'
 Plug 'webberwu/vim-fugitive'
@@ -185,17 +185,6 @@ autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 
-"syntastic
-let g:syntastic_auto_loc_list=1
-let g:syntastic_ignore_files = ['\.env']
-let g:syntastic_php_checkers=['php', 'phpmd']
-let g:syntastic_python_exec = 'python3'
-let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_css_checkers=[]
-let g:syntastic_html_checkers=[]
-let g:syntastic_scala_checkers=[]
-let g:syntastic_javascript_checkers=['jshint']
-
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
@@ -295,3 +284,10 @@ autocmd FileType php setlocal omnifunc=phpactor#Complete
 " refs. https://github.com/ryanoasis/nerd-fonts#font-installation
 " install font on macOS
 " cd ~/Library/Fonts && curl -fLo 'Droid Sans Mono for Powerline Nerd Font Complete.otf' https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+" w0rp/ale
+let g:airline#extensions#ale#enabled = 1
+let g:ale_lint_on_enter = 0
+let g:ale_open_list = 1
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_pylint_options = '--disable=line-too-long,missing-docstring,too-few-public-methods'
