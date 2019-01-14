@@ -30,6 +30,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'guns/xterm-color-table.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
+Plug 'honza/vim-snippets'
 Plug 'isRuslan/vim-es6', { 'for': ['js', 'vue'] }
 Plug 'jelera/vim-javascript-syntax', { 'for': ['js', 'vue'] }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -50,7 +51,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips', { 'for': 'php' }
+Plug 'SirVer/ultisnips'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tobyS/vmustache', { 'for': 'php' }
@@ -68,7 +69,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
 Plug 'w0rp/ale'
 Plug 'webberwu/html.vim'
-Plug 'webberwu/snipmate.vim'
 Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
 call plug#end()
