@@ -281,6 +281,8 @@ let g:fzf_colors = {
 nmap <C-u> :call phpactor#UseAdd()<CR>
 " Goto definition of class or class member under the cursor
 nmap <C-o> :call phpactor#GotoDefinition()<CR>
+" Show brief information about the symbol under the cursor
+nmap <C-h> :call phpactor#Hover()<CR>
 autocmd FileType php setlocal omnifunc=phpactor#Complete
 
 " ryanoasis/vim-devicons
