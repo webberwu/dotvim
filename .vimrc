@@ -149,8 +149,8 @@ noremap me $
 noremap ms ^
 noremap .rs :%s/\s\+$//<CR>
 noremap gb :Buffers<CR>
-noremap bp :bp<CR>
-noremap bn :bn<CR>
+noremap gbp :bp<CR>
+noremap gbn :bn<CR>
 
 "forked from tobyS/pdv, YaroslavMolchan/pdv has implemented feature which return type.
 "dependence: SirVer/ultisnips, tobyS/vmustache
