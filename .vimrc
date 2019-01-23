@@ -295,6 +295,8 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_open_list = 1
+let g:ale_php_phpcs_standard = 'PSR2'
+let g:ale_php_phpcs_options = '--exclude=Generic.Files.LineLength,PSR1.Files.SideEffects'
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_pylint_options = '--disable=line-too-long,missing-docstring,too-few-public-methods'
 let g:ale_linters = {
