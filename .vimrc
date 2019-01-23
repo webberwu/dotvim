@@ -300,3 +300,8 @@ let g:ale_python_pylint_options = '--disable=line-too-long,missing-docstring,too
 let g:ale_linters = {
         \'php': ['php', 'phpcs']
     \}
+
+" SirVer/ultisnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-b>'
