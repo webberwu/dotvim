@@ -42,6 +42,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
+Plug 'mgedmin/python-imports.vim', { 'for': 'python' }
 Plug 'mkitt/tabline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
@@ -284,6 +285,9 @@ nmap <C-o> :call phpactor#GotoDefinition()<CR>
 " Show brief information about the symbol under the cursor
 nmap <C-h> :call phpactor#Hover()<CR>
 autocmd FileType php setlocal omnifunc=phpactor#Complete
+
+" mgedmin/python-imports.vim
+nmap <C-i> :ImportName<CR>
 
 " ryanoasis/vim-devicons
 " refs. https://github.com/ryanoasis/nerd-fonts#font-installation
