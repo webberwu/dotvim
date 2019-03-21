@@ -260,6 +260,7 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
 "junegunn/fzf.vim
 nnoremap <C-j> :Files<CR>
+nnoremap <C-t> :Tags<CR>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore "*.swp" -f -U -g ""'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_tags_command = 'ctags --extra=+f -R'
