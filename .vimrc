@@ -32,7 +32,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
 Plug 'honza/vim-snippets'
 Plug 'isRuslan/vim-es6', { 'for': ['js', 'vue'] }
-Plug 'jelera/vim-javascript-syntax', { 'for': ['js', 'vue'] }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
@@ -54,6 +53,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
+Plug 'storyn26383/vim-vue', { 'for': ['js', 'vue'] }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tobyS/vmustache', { 'for': 'php' }
 Plug 'tpope/vim-dotenv'
