@@ -74,9 +74,6 @@ Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
 call plug#end()
 
-set encoding=utf-8
-set fileencodings=utf-8,big5
-
 syntax on
 set t_Co=256
 set incsearch
@@ -86,6 +83,7 @@ set ruler
 set ignorecase
 set encoding=utf-8
 set fileencoding=utf-8
+set fileencodings=utf-8,ucs-bom,big5
 " set mouse=a
 set modeline
 set cursorline
