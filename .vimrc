@@ -27,6 +27,7 @@ Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'fatih/vim-go'
 Plug 'guns/xterm-color-table.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
