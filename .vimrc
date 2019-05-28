@@ -104,6 +104,7 @@ set autoindent
 set smartindent
 set smarttab
 "set autochdir
+set redrawtime=10000
 
 "colorscheme desert
 colorscheme webberwu
