@@ -14,7 +14,6 @@ function! BuildYCM(info)
 endfunction
 
 call plug#begin('~/.vim/plugged')
-Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'avakhov/vim-yaml'
