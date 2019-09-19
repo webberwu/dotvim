@@ -14,9 +14,9 @@ function! BuildYCM(info)
 endfunction
 
 call plug#begin('~/.vim/plugged')
-Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color', { 'for': ['css', 'sass', 'scss'] }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
-Plug 'avakhov/vim-yaml'
+Plug 'avakhov/vim-yaml', { 'for': ['yml', 'yaml'] }
 Plug 'c9s/colorselector.vim'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
 Plug 'chase/vim-ansible-yaml'
@@ -26,9 +26,9 @@ Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'guns/xterm-color-table.vim'
-Plug 'hail2u/vim-css3-syntax'
+Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'sass', 'scss'] }
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
 Plug 'honza/vim-snippets'
 Plug 'isRuslan/vim-es6', { 'for': ['js', 'vue'] }
