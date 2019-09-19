@@ -75,6 +75,7 @@ Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
 call plug#end()
 
 syntax on
+
 set t_Co=256
 set incsearch
 set hlsearch
@@ -103,7 +104,8 @@ set autoindent
 set smartindent
 set smarttab
 "set autochdir
-set redrawtime=10000
+set lazyredraw
+set redrawtime=100000
 
 "colorscheme desert
 colorscheme webberwu
@@ -137,8 +139,9 @@ autocmd BufWinLeave * call clearmatches()
 
 set foldmethod=indent
 set foldlevelstart=99
-autocmd BufWinLeave *.* silent! mkview
-autocmd BufWinEnter *.* silent! loadview
+" will become slow if open many lines file
+"autocmd BufWinLeave *.* silent! mkview
+"autocmd BufWinEnter *.* silent! loadview
 "autocmd Syntax php normal zR
 
 inoremap jj <ESC>
