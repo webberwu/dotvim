@@ -14,6 +14,7 @@ function! BuildYCM(info)
 endfunction
 
 call plug#begin('~/.vim/plugged')
+Plug 'andymass/vim-matchup'
 Plug 'ap/vim-css-color', { 'for': ['css', 'sass', 'scss'] }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'avakhov/vim-yaml', { 'for': ['yml', 'yaml'] }
@@ -66,7 +67,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/Align'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/L9'
-Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
 Plug 'w0rp/ale'
 Plug 'webberwu/html.vim'
