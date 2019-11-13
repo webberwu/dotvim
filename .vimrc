@@ -44,7 +44,6 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'mgedmin/python-imports.vim', { 'for': 'python' }
 Plug 'mkitt/tabline.vim'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
@@ -72,6 +71,7 @@ Plug 'w0rp/ale'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 syntax on
@@ -315,3 +315,7 @@ let g:ale_linters = {
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-b>'
+
+" Yggdroot/indentLine
+let g:indentLine_faster = 1
+let g:indentLine_color_term = 239
