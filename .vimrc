@@ -23,6 +23,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
 Plug 'chase/vim-ansible-yaml'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'dense-analysis/ale'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
@@ -67,7 +68,6 @@ Plug 'vim-scripts/Align'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
-Plug 'w0rp/ale'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
@@ -298,7 +298,7 @@ nmap <C-i> :ImportName<CR>
 " install font on macOS
 " cd ~/Library/Fonts && curl -fLo 'Droid Sans Mono for Powerline Nerd Font Complete.otf' https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
-" w0rp/ale
+" dense-analysis/ale
 let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 'never'
