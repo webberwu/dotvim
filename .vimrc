@@ -285,11 +285,11 @@ let g:fzf_colors = {
 
 " phpactor/phpactor
 " Include use statement
-nmap <C-u> :call phpactor#UseAdd()<CR>
+autocmd FileType php nmap <C-u> :call phpactor#UseAdd()<CR>
 " Goto definition of class or class member under the cursor
-nmap <C-o> :call phpactor#GotoDefinition()<CR>
+autocmd FileType php nmap <C-o> :call phpactor#GotoDefinition()<CR>
 " Show brief information about the symbol under the cursor
-nmap <C-h> :call phpactor#Hover()<CR>
+autocmd FileType php nmap <C-h> :call phpactor#Hover()<CR>
 autocmd FileType php setlocal omnifunc=phpactor#Complete
 
 " mgedmin/python-imports.vim
