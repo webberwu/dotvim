@@ -321,5 +321,7 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-b>'
 
 " Yggdroot/indentLine
+let g:indentLine_enabled = 1
 let g:indentLine_faster = 1
 let g:indentLine_color_term = 239
+let g:indentLine_setConceal = 0
