@@ -320,6 +320,20 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-b>'
 
+" fatih/vim-go
+let g:go_autodetect_gopath = 1
+let g:go_fmt_command = 'goimports'
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_null_module_warning = 0
+
+autocmd FileType go nmap <C-o> <Plug>(go-def-tab)
+
 " Yggdroot/indentLine
 let g:indentLine_enabled = 1
 let g:indentLine_faster = 1
