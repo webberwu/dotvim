@@ -68,6 +68,8 @@ Plug 'vim-scripts/Align'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
+" need to install phpctags: `composer global require techlivezheng/phpctags`
+Plug 'vim-php/tagbar-phpctags.vim'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
