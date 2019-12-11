@@ -339,4 +339,5 @@ autocmd FileType go nmap <C-o> <Plug>(go-def-tab)
 let g:indentLine_enabled = 1
 let g:indentLine_faster = 1
 let g:indentLine_color_term = 239
-let g:indentLine_setConceal = 0
+" https://github.com/plasticboy/vim-markdown/issues/395
+autocmd FileType markdown let b:indentLine_enabled = 0
