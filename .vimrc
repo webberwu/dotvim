@@ -196,6 +196,8 @@ autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+let g:tagbar_width = 70
 
 "vim-easy-align
 "usage: vmode: ga*|
@@ -210,6 +212,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline_powerline_fonts = 1
 "airline-theme
 "screenshots: https://github.com/vim-airline/vim-airline/wiki/Screenshots
