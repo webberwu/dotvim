@@ -1,3 +1,6 @@
+" https://github.com/vim/vim/issues/668#issuecomment-191420742
+let g:vimsyn_embed='0'
+
 " vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -15,7 +18,7 @@ endfunction
 
 call plug#begin('~/.vim/plugged')
 Plug 'andymass/vim-matchup'
-Plug 'ap/vim-css-color', { 'for': ['css', 'sass', 'scss'] }
+"Plug 'ap/vim-css-color', { 'for': ['css', 'sass', 'scss'] }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'avakhov/vim-yaml', { 'for': ['yml', 'yaml'] }
 Plug 'c9s/colorselector.vim'
@@ -108,6 +111,7 @@ set smarttab
 "set autochdir
 set lazyredraw
 set redrawtime=100000
+set re=1
 
 "colorscheme desert
 colorscheme webberwu
