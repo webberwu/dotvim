@@ -48,6 +48,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'mgedmin/python-imports.vim', { 'for': 'python' }
 Plug 'mkitt/tabline.vim'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
@@ -76,7 +77,6 @@ Plug 'vim-php/tagbar-phpctags.vim'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/vim-fugitive'
 Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
-Plug 'Yggdroot/indentLine'
 call plug#end()
 
 syntax on
@@ -341,10 +341,3 @@ let g:go_highlight_structs = 1
 let g:go_null_module_warning = 0
 
 autocmd FileType go nmap <C-o> <Plug>(go-def-tab)
-
-" Yggdroot/indentLine
-let g:indentLine_enabled = 1
-let g:indentLine_faster = 1
-let g:indentLine_color_term = 239
-" https://github.com/plasticboy/vim-markdown/issues/395
-autocmd FileType markdown let b:indentLine_enabled = 0
