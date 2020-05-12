@@ -341,4 +341,5 @@ let g:go_highlight_operators = 1
 let g:go_highlight_structs = 1
 let g:go_null_module_warning = 0
 
+autocmd FileType go inoremap <buffer> . .<C-x><C-o>
 autocmd FileType go nmap <C-o> <Plug>(go-def-tab)
