@@ -29,8 +29,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'dense-analysis/ale'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'dietsche/vim-lastplace'
-" disable because will slow in large file
-"Plug 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'guns/xterm-color-table.vim'
