@@ -274,7 +274,7 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 nnoremap <C-j> :Files<CR>
 nnoremap <C-t> :Tags<CR>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore "*.swp" -f -U -g ""'
-let g:fzf_files_options = "--ansi --preview-window 'right:55%' --preview '(bat --color=always --style=header,grid {} || cat {}) 2> /dev/null | head -" . &lines . "'"
+let g:fzf_files_options = "--ansi --preview-window 'right:55%' --preview '(bat --color=always --style=header,grid {} || cat {}) 2> /dev/null | head -" . &lines . "' --bind alt-down:preview-page-down,alt-up:preview-page-up,alt-j:preview-down,alt-k:preview-up"
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_tags_command = 'ctags --extra=+f -R'
 let g:fzf_colors = {
