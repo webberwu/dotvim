@@ -32,6 +32,8 @@ Plug 'dietsche/vim-lastplace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
+" usage: :Tabularize /|
+Plug 'godlygeek/tabular'
 Plug 'guns/xterm-color-table.vim'
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'sass', 'scss'] }
 Plug 'heavenshell/vim-jsdoc', { 'for': ['js', 'vue'] }
