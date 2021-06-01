@@ -110,6 +110,7 @@ set tags+=tags,tags.vendors
 set autoindent
 set smartindent
 set smarttab
+set virtualedit=block
 "set autochdir
 set lazyredraw
 set redrawtime=100000
