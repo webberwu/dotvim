@@ -201,7 +201,7 @@ autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 
 "tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap mm :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_width = 70
