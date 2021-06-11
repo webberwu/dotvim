@@ -328,8 +328,8 @@ let g:ale_linters = {
 
 " SirVer/ultisnips
 let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<c-n>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-p>'
+let g:UltiSnipsJumpForwardTrigger = '<c-b>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 
 " fatih/vim-go
 let g:go_auto_type_info = 1
