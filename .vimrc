@@ -23,7 +23,6 @@ Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'avakhov/vim-yaml', { 'for': ['yml', 'yaml'] }
 Plug 'c9s/colorselector.vim'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
-Plug 'chase/vim-ansible-yaml'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'dense-analysis/ale'
@@ -54,6 +53,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'js' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
+Plug 'pearofducks/ansible-vim', { 'for': ['yml', 'yaml'] }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
