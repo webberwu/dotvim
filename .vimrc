@@ -10,9 +10,11 @@ endif
 
 " Valloric/YouCompleteMe
 " https://github.com/Valloric/YouCompleteMe/issues/1751#issuecomment-273380629
+" brwe install python3
+" run below function after installing Go, Node.js and NPM
 function! BuildYCM(info)
   if a:info.status == 'installed' || a:info.force
-    !./install.py --all
+    !./install.py --go-completer --ts-completer
   endif
 endfunction
 
