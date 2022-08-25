@@ -46,7 +46,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'jwalton512/vim-blade', { 'for': ['blade', 'php'] }
 Plug 'kristijanhusak/vim-carbon-now-sh'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'taoso/phpcd.vim', { 'branch': 'php8', 'for': 'php', 'do': 'composer install' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'mgedmin/python-imports.vim', { 'for': 'python' }
