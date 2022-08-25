@@ -80,7 +80,7 @@ Plug 'vim-scripts/OOP-javascript-indentation', { 'for': ['js', 'vue'] }
 Plug 'vim-php/tagbar-phpctags.vim'
 Plug 'webberwu/html.vim'
 Plug 'webberwu/vim-fugitive'
-Plug 'YaroslavMolchan/pdv', { 'for': 'php' }
+Plug 'pageer/pdv', { 'for': 'php' }
 call plug#end()
 
 syntax on
@@ -166,7 +166,7 @@ noremap gb :Buffers<CR>
 noremap gbp :bp<CR>
 noremap gbn :bn<CR>
 
-"forked from tobyS/pdv, YaroslavMolchan/pdv has implemented feature which return type.
+"forked from tobyS/pdv, pageer/pdv has implemented feature which return type.
 "dependence: SirVer/ultisnips, tobyS/vmustache
 let g:pdv_cfg_Uses = 1
 let g:pdv_template_dir = $HOME . '/.vim/plugged/pdv/templates_snip'
